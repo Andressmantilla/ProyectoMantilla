@@ -1,0 +1,85 @@
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url("../img/agencia.png") center / cover no-repeat;
+    
+}
+
+body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+      }
+
+      .menu li:hover > .submenu,
+      .menu li:focus-within > .submenu {
+        display: block;
+      }
+      .barra {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        padding: 25px 10px;
+        box-shadow: 0 3px 8px #cccccc;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        list-style: none;
+      }
+      .menu > li {
+        position: relative;
+      }
+      .menu > li > a {
+        display: block;
+        padding: 15px 10px;
+        color: #222222;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .menu > li > a:hover {
+        color:  #f26b0f;
+      }
+
+  .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 230px;
+       
+        list-style: none;
+        box-shadow: 0 5px 12px #f26b0f;
+        border-top: 4px solid ;
+        z-index: 100;
+      }
+      .submenu a {
+        display: block;
+        padding: 16px;
+        color: #fffcfc;
+        text-decoration: none;
+        font-size: 19px;
+        border-bottom: 1px solid  #f26b0f;
+      }
+      .submenu a:hover {
+        background-color: #f26b0f;
+        color: #feffff;
+      }
+
+:root { --azul: #000000; --naranja: #f26b0f; }
+
+.bg-azul      { background-color: var(--azul) !important; }
+.text-azul    { color: var(--azul) !important; }
+.bg-naranja   { background-color: var(--naranja) !important; }
+.text-naranja { color: var(--naranja) !important; }
+
+.btn-naranja { background-color: var(--naranja); color: #fff; font-weight: 600; border: none; }
+.btn-naranja:hover { background-color: #0b0b0b; color: #fff; }
+
+.nav-link.active { color: var(--naranja) !important; }
+.border-naranja { border-color: var(--naranja) !important; }
+.accordion-button:not(.collapsed) { background-color: #fff1e6; color: var(--azul); }
